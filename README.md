@@ -12,6 +12,8 @@ $ npm i loopback-mixin-db-encryption --save
 
 - [ ] add proper documentation
 - [ ] add changelog
+- [ ] add better debugging
+- [ ] add more options
 
 ## License
 
