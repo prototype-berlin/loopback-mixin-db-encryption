@@ -1,7 +1,7 @@
 const crypto = require('crypto');
 const debug = require('debug')('loopback:mixins:encryption');
 
-const DEFAULT_ITERATIONS = 10;
+const DEFAULT_ITERATIONS = 50000;
 const REQUIRED_OPTIONS = ['salt', 'iv', 'password', 'fields'];
 
 module.exports = function (Model, options = {}) {
