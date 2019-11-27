@@ -1,9 +1,10 @@
-import debug from './debug';
+const crypto = require('crypto');
+const debug = require('debug')('loopback:mixins:encryption');
 
 const DEFAULT_ITERATIONS = 10;
 const REQUIRED_OPTIONS = ['salt', 'iv', 'password', 'fields'];
 
-export default async (Model, options = {}) => {
+module.exports = function (Model, options = {}) {
   debug('Setting up encryption mixin for model %s', Model.modelName);
 
   Model.getApp((error, app) => {
@@ -108,5 +109,3 @@ export default async (Model, options = {}) => {
     }
   }
 };
-
-module.exports = exports.default;
