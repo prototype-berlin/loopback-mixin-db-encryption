@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Database encryption mixin for LoopBack.",
   "main": "encryption.js",
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
     "release": "np"
   },
